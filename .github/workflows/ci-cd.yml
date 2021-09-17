@@ -152,7 +152,7 @@ jobs:
           path: "Python ${{ matrix.python-version }} - logs/pytest.log"
 
       - name: Upload coverage to codecov.io
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2.1.0
         with:
           token: ${{ secrets.CODECOV_TOKEN}}
           fail_ci_if_error: false
